@@ -1,8 +1,12 @@
+@php
+    use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+@endphp
 <!doctype html>
-<html lang="en">
+{{--  Set page language and direction dynamically: - lang: changes based on current locale (ar / en) - dir: sets text direction (RTL for Arabic, LTR for others) --}}
+<html lang="{{ app()->getLocale() }}" dir="{{ LaravelLocalization::getCurrentLocale() == 'ar' ? 'rtl' : 'ltr' }}">
 @include('admin.partials.head')
 
-<body class="vertical  light  ">
+<body class="vertical  light  rtl">
     <div class="wrapper">
         @include('admin.partials.navbar')
 
@@ -11,7 +15,7 @@
         <main role="main" class="main-content">
 
             @yield('content')
-            
+
         </main> <!-- main -->
 
     </div> <!-- .wrapper -->
