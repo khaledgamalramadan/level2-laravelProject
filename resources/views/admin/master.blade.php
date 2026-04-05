@@ -21,6 +21,13 @@
     </div> <!-- .wrapper -->
 
     @include('admin.partials.scripts')
+    <script>
+        function confirmDelete(id) {
+            if (confirm('Are You Sure You Want To Delete This Record ?')) {
+                document.getElementById('deleteForm-' + id).submit();
+            }
+        }
+    </script>
 </body>
 
 </html>
