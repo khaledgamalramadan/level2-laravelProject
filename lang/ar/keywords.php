@@ -18,6 +18,8 @@ return [
     // Home page translation
     'home'              => 'الرئيسيه',
 
+    // common translations
+
     // Services page translation
     'components'        => 'المكونات',
     'services'          => 'الخدمات',
@@ -30,8 +32,9 @@ return [
     'description'       => 'الوصف',
     'submit'            => 'ارسال',
     'show_service'      => 'عرض الخدمه',
+    'features'      => '',
     'Service_created_successfully' => 'تم انشاء الخدمه بنجاح',
-    'Service_updated_successfully' => 'تم تعديل الخدمه بنجاح', 
+    'Service_updated_successfully' => 'تم تعديل الخدمه بنجاح',
 
 
 

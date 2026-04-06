@@ -33,7 +33,10 @@
         <ul class="navbar-nav flex-fill w-100 mb-2">
             {{-- Services page --}}
             <x-sidepar-tab href="{{ route('admin.services.index') }}" icon="fe-layers" name="{{ __('keywords.services') }}"></x-sidepar-tab>
-            
+
+            {{-- features page --}}
+            <x-sidepar-tab href="{{ route('admin.features.index') }}" icon="fe-sliders" name="{{ __('keywords.features') }}"></x-sidepar-tab>
+
         </ul>
 
 
