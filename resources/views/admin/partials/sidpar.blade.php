@@ -37,6 +37,12 @@
             {{-- features page --}}
             <x-sidepar-tab href="{{ route('admin.features.index') }}" icon="fe-sliders" name="{{ __('keywords.features') }}"></x-sidepar-tab>
 
+            {{-- messages page --}}
+            <x-sidepar-tab href="{{ route('admin.messages.index') }}" icon="fe-message-square" name="{{ __('keywords.messages') }}"></x-sidepar-tab>
+
+            {{-- messages page --}}
+            <x-sidepar-tab href="{{ route('admin.subscribers.index') }}" icon="fe-users" name="{{ __('keywords.subscribers') }}"></x-sidepar-tab>
+
         </ul>
 
 

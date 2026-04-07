@@ -52,6 +52,18 @@ return [
     'feature_deleted_successfully'  => 'Feature Deleted successfully',
 
 
+    //messages page translation
+    'messages'                      => 'Messages',
+    'show_messages'                 => 'Show Messages',
+    'name'                          => 'Name',
+    'subject'                       => 'Subject',
+    'message'                       => 'Message',
+    'created_at'                    => 'Created_at',
+    'Message_deleted_successfully'  => 'Message Deleted successfully',
+
+
+    //messages page translation
+    'subscribers'                   => 'Subscribers',
 
 
 

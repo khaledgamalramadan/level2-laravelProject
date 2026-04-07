@@ -1,0 +1,62 @@
+@extends('admin.master')
+
+@section('title', __('keywords.messages'))
+
+@section('content')
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="h5 page-title">{{ __('keywords.messages') }}</h2>
+
+                </div>
+
+                <div class="card shadow">
+                    <div class="card-body">
+                        <x-success-alert></x-success-alert>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="5%">#</th>
+                                    <th>{{ __('keywords.name') }}</th>
+                                    <th>{{ __('keywords.email') }}</th>
+                                    <th>{{ __('keywords.subject') }}</th>
+                                    <th>{{ __('keywords.created_at') }}</th>
+                                    <th width="13%">{{ __('keywords.action') }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (count($messages) > 0)
+                                    @foreach ($messages as $key => $message)
+                                        <tr>
+                                            <td>{{ $messages->firstItem() + $loop->index }}</td>
+                                            <td>{{ $message->name }}</td>
+                                            <td>{{ $message->email }}</td>
+                                            <td>{{ $message->subject }}</td>
+                                            <td>{{ $message->created_at }}</td>
+
+                                            <td>
+                                                {{-- Show btn --}}
+                                                <x-action-button href="{{ route('admin.messages.show', ['message' => $message]) }}" type="show"></x-action-button>
+
+                                                {{-- Delete btn --}}
+                                                <x-delete-button href="{{ route('admin.messages.destroy', ['message' => $message]) }}" id="{{ $message->id }}"></x-delete-button>
+
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @else
+                                    <x-empty-alert></x-empty-alert>
+                                @endif
+                            </tbody>
+                        </table>
+                        {{ $messages->render('pagination::bootstrap-5') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection
