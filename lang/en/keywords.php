@@ -65,7 +65,47 @@ return [
     //messages page translation
     'subscribers'                   => 'Subscribers',
 
+    //Testimonials page translation
+    'testimonials'                   => 'Testimonials',
+    'position'                      => 'Position',
+    'image'                         => 'Image',
+    'add_new_testimonial'           => 'Add New Testimonial',
+    'show_testimonial'              => 'Show Testimonial',
+    'edit_testimonial'              => 'Edit Testimonial',
+    'testimonial_created_successfully'  => 'Testimonial created successfully',
+    'testimonial_updated_successfully' => 'Testimonial Updated successfully',
+    'testimonial_deleted_successfully' => 'Testimonial Deleted successfully',
+
+    //Sett page translation
+    'members'                       => 'Members',
+    'add_new_member'                => 'Add New Member',
+    'show_member'                   => 'Show Member',
+    'edit_member'                   => 'Edit Member',
+    'facebook'                      => 'Facebook',
+    'twitter'                       => 'Twitter',
+    'linkedin'                      => 'Linkedin',
+    'member_created_successfully'   => 'Member created successfully',
+    'member_updated_successfully'   => 'Member Updated successfully',
+    'member_deleted_successfully'   => 'Member Deleted successfully',
 
 
+    //Company page translation
+    'company'                       => 'Company',
+    'companies'                      => 'Companies',
+    'add_new_company'               => 'Add New Company',
+    'show_company'                  => 'Show Company',
+    'edit_company'                  => 'Edit Company',
+    'company_created_successfully'  => 'Company created successfully',
+    'company_updated_successfully'  => 'Company Updated successfully',
+    'company_deleted_successfully'  => 'Company Deleted successfully',
+
+
+    //Settins page translation
+    'settings'                       => 'Settings',
+    'address'                        => 'Address',
+    'phone'                          => 'Phone',
+    'youtube'                        => 'Youtube',
+    'instagram'                      => 'Instagram',
+    'settings_updated_successfully' => 'Settings Updated successfully',
 
 ];

@@ -43,6 +43,18 @@
             {{-- messages page --}}
             <x-sidepar-tab href="{{ route('admin.subscribers.index') }}" icon="fe-users" name="{{ __('keywords.subscribers') }}"></x-sidepar-tab>
 
+            {{-- testimonials page --}}
+            <x-sidepar-tab href="{{ route('admin.testimonials.index') }}" icon=" fe-message-circle" name="{{ __('keywords.testimonials') }}"></x-sidepar-tab>
+
+            {{-- members page --}}
+            <x-sidepar-tab href="{{ route('admin.members.index') }}" icon=" fe-users" name="{{ __('keywords.members') }}"></x-sidepar-tab>
+
+            {{-- companies page --}}
+            <x-sidepar-tab href="{{ route('admin.companies.index') }}" icon="fe-grid" name="{{ __('keywords.companies') }}"></x-sidepar-tab>
+
+            {{-- settings page --}}
+            <x-sidepar-tab href="{{ route('admin.settings.index') }}" icon="fe-settings" name="{{ __('keywords.settings') }}"></x-sidepar-tab>
+
         </ul>
 
 
